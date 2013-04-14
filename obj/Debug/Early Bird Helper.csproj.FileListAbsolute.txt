@@ -8,3 +8,16 @@ C:\Users\Robert\Documents\GitHub\Early Bird Helper\Early Bird Helper\obj\Debug\E
 C:\Users\Robert\Documents\GitHub\Early Bird Helper\Early Bird Helper\obj\Debug\Early Bird Helper.exe
 C:\Users\Robert\Documents\GitHub\Early Bird Helper\Early Bird Helper\obj\Debug\Early Bird Helper.pdb
 C:\Users\Robert\Documents\GitHub\Early Bird Helper\Early Bird Helper\obj\Debug\Early_Bird_Helper.License.resources
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\bin\Debug\Early Bird Helper.exe.config
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early Bird Helper.exe
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early Bird Helper.pdb
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\bin\Debug\Early Bird Helper.exe.manifest
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\bin\Debug\Early Bird Helper.application
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\bin\Debug\Early Bird Helper.exe
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\bin\Debug\Early Bird Helper.pdb
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early_Bird_Helper.Form1.resources
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early_Bird_Helper.Properties.Resources.resources
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early Bird Helper.csproj.GenerateResource.Cache
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early Bird Helper.exe.manifest
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early Bird Helper.application
+C:\Users\Robert\Documents\GitHub\EarlyBirdHelper\obj\Debug\Early Bird Helper.csprojResolveAssemblyReference.cache

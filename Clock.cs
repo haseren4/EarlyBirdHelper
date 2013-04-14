@@ -17,17 +17,26 @@ namespace Early_Bird_Helper
             p_minute = minute;
             
         }
+
         public Clock(string hour, string minute) 
         {
             p_hour = Int16.Parse(hour);
             p_minute = Int16.Parse(minute);
         }
+
         public void subMinutes(int minutes)
         {
             p_minute = p_minute - minutes;
             update();
         }
+
+        public void addMinutes(int minutes)
+        {
+            p_minute = p_minute + minutes;
+            update();
+        }
         
+        // Here for show but never used
         public String print12() {
             if (p_hour < 12)
                 return (string)(p_hour + ":" + String.Format("{0:D2}",p_minute) + " AM");
@@ -36,9 +45,15 @@ namespace Early_Bird_Helper
             else
                 return "AN ERROR OCCURED IN Clock.print12()\n";
         }
+
         public String print24() 
         { 
-            return (string)(p_hour + ":" + String.Format("{0:D2}",p_minute));
+            return String.Format("{0:D2}:{1:D2}",p_hour,p_minute);
+        }
+
+        public override string ToString()
+        {
+            return print24();
         }
         
         private void update() 

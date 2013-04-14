@@ -16,6 +16,7 @@ namespace Early_Bird_Helper
         Clock clock;
         int interval;
         int showCycles;
+        DateTime now;
         public Form1()
         {
             showCycles = 4;
@@ -49,25 +50,50 @@ namespace Early_Bird_Helper
         private void calcBtn_Click(object sender, EventArgs e)
         {
             cycleList.Items.Clear();
-            Console.WriteLine(hourBox.SelectedItem.ToString());
-            Console.WriteLine(minuteBox.SelectedItem.ToString());
-            clock = new Clock(hourBox.SelectedItem.ToString(), minuteBox.SelectedItem.ToString());
-            Console.WriteLine(clock.print24());
-
-            int i = 1;
-            clock.subMinutes(180);
-
-            while (i <= showCycles)
+            if ((!wakeRadio.Checked) && (!sleepRadio.Checked))
+                return;
+           
+            if (wakeRadio.Checked)
             {
-                clock.subMinutes(interval);
-                results[i] = clock.print24();
-                Console.WriteLine(results[i]);
-                i++;
-            }
-            foreach (string s in results)
-                cycleList.Items.Add(s);
+                Console.WriteLine("wakeup time has been given, calculating optimal sleep times");
+                clock = new Clock(hourBox.SelectedItem.ToString(), minuteBox.SelectedItem.ToString());
+                Console.WriteLine(clock.print24());
+                int i = 1;
+                clock.subMinutes(14);
+                clock.subMinutes(180);
 
-            
+                while (i <= showCycles)
+                {
+                    clock.subMinutes(interval);
+                    results[i] = clock.print24();
+                    Console.WriteLine(results[i]);
+                    i++;
+                }
+                foreach (string s in results)
+                    cycleList.Items.Add(s);
+
+            }
+            if (sleepRadio.Checked)
+            {
+                Console.WriteLine("User is going to sleep right now, calculating optimal wakeup times");
+                now = new DateTime();
+                now = System.DateTime.Now;
+                clock = new Clock(now.Hour, now.Minute);
+                Console.WriteLine(clock.ToString());
+                int i = 1;
+                clock.addMinutes(14);
+                clock.addMinutes(180);
+
+                while (i <= showCycles)
+                {
+                    clock.addMinutes(interval);
+                    results[i] = clock.print24();
+                    Console.WriteLine(results[i]);
+                    i++;
+                }
+                foreach (string s in results)
+                    cycleList.Items.Add(s);
+            }
             
         }
 
