@@ -43,7 +43,7 @@
             this.hourBox.Name = "hourBox";
             this.hourBox.Size = new System.Drawing.Size(95, 21);
             this.hourBox.TabIndex = 0;
-            this.hourBox.Text = "---select hour---";
+            this.hourBox.Text = Constants.SEL_H;
             // 
             // minuteBox
             // 
@@ -52,7 +52,7 @@
             this.minuteBox.Name = "minuteBox";
             this.minuteBox.Size = new System.Drawing.Size(107, 21);
             this.minuteBox.TabIndex = 1;
-            this.minuteBox.Text = "---select minute---";
+            this.minuteBox.Text = Constants.SEL_M;
             // 
             // calcBtn
             // 
@@ -81,7 +81,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 7);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Copywrite 2013 Haseren Lanesher Studios";
+            this.label1.Text = Constants.COPY;
             // 
             // Form1
             // 
@@ -95,7 +95,7 @@
             this.Controls.Add(this.hourBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Early Bird Helper";
+            this.Text = Constants.APP_NAME;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
